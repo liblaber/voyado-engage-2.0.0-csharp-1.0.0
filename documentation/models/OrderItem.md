@@ -2,24 +2,24 @@
 
 **Properties**
 
-| Name                  | Type                    | Required | Description |
-| :-------------------- | :---------------------- | :------- | :---------- |
-| Type\_                | OrderItemType           | ✅       |             |
-| Sku                   | string                  | ✅       |             |
-| Quantity              | double                  | ✅       |             |
-| GrossPaidPrice        | double                  | ✅       |             |
-| Description           | string                  | ✅       |             |
-| GrossPaidPricePerUnit | double                  | ❌       |             |
-| TaxAmount             | double                  | ❌       |             |
-| TaxPercent            | double                  | ❌       |             |
-| ImageUrl              | string                  | ❌       |             |
-| TargetUrl             | string                  | ❌       |             |
-| ExtraData             | object                  | ❌       |             |
-| TotalDiscount         | double                  | ❌       |             |
-| OriginalPrice         | double                  | ❌       |             |
-| OriginalPricePerUnit  | double                  | ❌       |             |
-| Discounts             | List<OrderItemDiscount> | ❌       |             |
-| Discounted            | bool                    | ❌       |             |
+| Name                  | Type                      | Required | Description |
+| :-------------------- | :------------------------ | :------- | :---------- |
+| Type\_                | OrderItemType             | ✅       |             |
+| Sku                   | string                    | ✅       |             |
+| Quantity              | double                    | ✅       |             |
+| GrossPaidPrice        | double                    | ✅       |             |
+| Description           | string                    | ✅       |             |
+| GrossPaidPricePerUnit | double                    | ❌       |             |
+| TaxAmount             | double                    | ❌       |             |
+| TaxPercent            | double                    | ❌       |             |
+| ImageUrl              | string                    | ❌       |             |
+| TargetUrl             | string                    | ❌       |             |
+| ExtraData             | object                    | ❌       |             |
+| TotalDiscount         | double                    | ❌       |             |
+| OriginalPrice         | double                    | ❌       |             |
+| OriginalPricePerUnit  | double                    | ❌       |             |
+| Discounts             | List`<OrderItemDiscount>` | ❌       |             |
+| Discounted            | bool                      | ❌       |             |
 
 # OrderItemType
 

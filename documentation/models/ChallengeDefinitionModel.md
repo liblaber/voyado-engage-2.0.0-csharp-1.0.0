@@ -20,7 +20,7 @@
 | ScheduledFrom               | string                         | ❌       |             |
 | ScheduledTo                 | string                         | ❌       |             |
 | Status                      | ChallengeDefinitionModelStatus | ❌       |             |
-| Links                       | List<IHypermediaLink>          | ❌       |             |
+| Links                       | List`<IHypermediaLink>`        | ❌       |             |
 
 # CheckpointAssignOn
 

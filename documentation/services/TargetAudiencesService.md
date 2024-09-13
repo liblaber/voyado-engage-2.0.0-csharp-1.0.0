@@ -13,7 +13,7 @@ A list of all methods in the `TargetAudiencesService` service. Click on the meth
 
 **Return Type**
 
-`List<IdName>`
+`List`<IdName>``
 
 **Example Usage Code Snippet**
 

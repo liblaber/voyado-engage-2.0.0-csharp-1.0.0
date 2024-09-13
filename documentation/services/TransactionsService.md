@@ -34,9 +34,9 @@ var client = new VoyadoEngageClient();
 
 var contact = new ReceiptContact("matchKey", ReceiptContact.ReceiptContactMatchKeyType.Email);
 var paymentMethodsItem = new ReceiptPaymentMethod("type", 5.08);
-var paymentMethods = new List<ReceiptPaymentMethod>() { paymentMethodsItem };
+var paymentMethods = new List`<ReceiptPaymentMethod>`() { paymentMethodsItem };
 var itemsItem = new ReceiptItem(ReceiptItem.ReceiptItemType.Purchase, "sku", 1, 1.17, 4.39, 1.12, "articleNumber", "articleName");
-var items = new List<ReceiptItem>() { itemsItem };
+var items = new List`<ReceiptItem>`() { itemsItem };
 var input = new Receipt(contact, "uniqueReceiptId", "receiptNumber", "createdDate", "storeExternalId", "currency", 7.19, paymentMethods, items);
 
 var response = await client.Transactions.ImportTransactionsImportReceiptsAsync(input);

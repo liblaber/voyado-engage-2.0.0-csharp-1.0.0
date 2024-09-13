@@ -52,7 +52,7 @@ Register a batch of cart updates. Cart updates are processed according to update
 
 | Name  | Type               | Required | Description       |
 | :---- | :----------------- | :------- | :---------------- |
-| input | List<CartApiModel> | ✅       | The request body. |
+| input | List`<CartApiModel>` | ✅       | The request body. |
 
 **Return Type**
 
@@ -67,7 +67,7 @@ using VoyadoEngage.Models;
 var client = new VoyadoEngageClient();
 
 var inputItem = new CartApiModel();
-var input = new List<CartApiModel>() { inputItem };
+var input = new List`<CartApiModel>`() { inputItem };
 
 var response = await client.Tracking.CartRegisterCartsAsync(input);
 
@@ -117,7 +117,7 @@ Register a collection of views to specific products for given contacts. Request 
 
 | Name  | Type                      | Required | Description       |
 | :---- | :------------------------ | :------- | :---------------- |
-| input | List<ProductViewApiModel> | ✅       | The request body. |
+| input | List`<ProductViewApiModel>` | ✅       | The request body. |
 
 **Return Type**
 
@@ -132,7 +132,7 @@ using VoyadoEngage.Models;
 var client = new VoyadoEngageClient();
 
 var inputItem = new ProductViewApiModel("itemId", "contactId");
-var input = new List<ProductViewApiModel>() { inputItem };
+var input = new List`<ProductViewApiModel>`() { inputItem };
 
 var response = await client.Tracking.ProductViewVRegisterProductViewsAsync(input);
 

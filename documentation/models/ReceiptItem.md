@@ -2,22 +2,22 @@
 
 **Properties**
 
-| Name           | Type                       | Required | Description |
-| :------------- | :------------------------- | :------- | :---------- |
-| Type\_         | ReceiptItemType            | ✅       |             |
-| Sku            | string                     | ✅       |             |
-| Quantity       | long                       | ✅       |             |
-| GrossPaidPrice | double                     | ✅       |             |
-| TaxAmount      | double                     | ✅       |             |
-| TaxPercent     | double                     | ✅       |             |
-| ArticleNumber  | string                     | ✅       |             |
-| ArticleName    | string                     | ✅       |             |
-| PackQuantity   | double                     | ❌       |             |
-| ExtraData      | List<ReceiptExtraDataItem> | ❌       |             |
-| ArticleGroup   | string                     | ❌       |             |
-| MarginPercent  | double                     | ❌       |             |
-| AwardsBonus    | bool                       | ❌       |             |
-| Discounts      | List<ReceiptItemDiscount>  | ❌       |             |
+| Name           | Type                         | Required | Description |
+| :------------- | :--------------------------- | :------- | :---------- |
+| Type\_         | ReceiptItemType              | ✅       |             |
+| Sku            | string                       | ✅       |             |
+| Quantity       | long                         | ✅       |             |
+| GrossPaidPrice | double                       | ✅       |             |
+| TaxAmount      | double                       | ✅       |             |
+| TaxPercent     | double                       | ✅       |             |
+| ArticleNumber  | string                       | ✅       |             |
+| ArticleName    | string                       | ✅       |             |
+| PackQuantity   | double                       | ❌       |             |
+| ExtraData      | List`<ReceiptExtraDataItem>` | ❌       |             |
+| ArticleGroup   | string                       | ❌       |             |
+| MarginPercent  | double                       | ❌       |             |
+| AwardsBonus    | bool                         | ❌       |             |
+| Discounts      | List`<ReceiptItemDiscount>`  | ❌       |             |
 
 # ReceiptItemType
 
