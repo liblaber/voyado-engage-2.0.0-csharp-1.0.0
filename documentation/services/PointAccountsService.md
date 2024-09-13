@@ -113,7 +113,7 @@ Console.WriteLine(response);
 
 **Return Type**
 
-`List`<PointDefinitionModel>``
+`List<PointDefinitionModel>`
 
 **Example Usage Code Snippet**
 
@@ -202,10 +202,10 @@ Console.WriteLine(response);
 
 **Parameters**
 
-| Name           | Type                            | Required | Description                  |
-| :------------- | :------------------------------ | :------- | :--------------------------- |
+| Name           | Type                              | Required | Description                  |
+| :------------- | :-------------------------------- | :------- | :--------------------------- |
 | input          | List`<PointTransactionToAccount>` | ✅       | The request body.            |
-| idempotencyKey | string                          | ❌       | Optional, lasts for 24 hours |
+| idempotencyKey | string                            | ❌       | Optional, lasts for 24 hours |
 
 **Return Type**
 
