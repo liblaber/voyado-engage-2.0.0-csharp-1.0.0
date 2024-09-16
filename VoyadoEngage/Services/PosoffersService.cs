@@ -2,6 +2,8 @@
 
 using System.Net.Http.Json;
 using VoyadoEngage.Http;
+using VoyadoEngage.Http.Exceptions;
+using VoyadoEngage.Http.Extensions;
 using VoyadoEngage.Http.Serialization;
 using VoyadoEngage.Models;
 
@@ -37,9 +39,9 @@ public class PosoffersService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<PagedResultOfAllLoyaltyBarClaimModel>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -73,9 +75,9 @@ public class PosoffersService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<PagedResultOfAvailableLoyaltyBarClaimModel>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -112,9 +114,9 @@ public class PosoffersService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<PagedResultOfAllLoyaltyBarClaimModel>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -152,9 +154,9 @@ public class PosoffersService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<PagedResultOfAvailableLoyaltyBarClaimModel>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -192,9 +194,9 @@ public class PosoffersService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<PagedResultOfAllLoyaltyBarClaimModel>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -233,9 +235,9 @@ public class PosoffersService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<PagedResultOfAvailableLoyaltyBarClaimModel>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -266,9 +268,9 @@ public class PosoffersService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<RedeemedLoyaltyBarClaimModel>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -305,9 +307,9 @@ public class PosoffersService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<RedeemedLoyaltyBarClaimModel>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -348,9 +350,9 @@ public class PosoffersService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<RedeemedLoyaltyBarClaimModel>(
                     _jsonSerializerOptions,
                     cancellationToken

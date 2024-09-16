@@ -50,9 +50,9 @@ Batch update of stock levels for multiple SKU's. Request model: - Sku*: Unique S
 
 **Parameters**
 
-| Name  | Type                      | Required | Description       |
-| :---- | :------------------------ | :------- | :---------------- |
-| input | List`<StockLevelRequest>` | ✅       | The request body. |
+| Name  | Type                    | Required | Description       |
+| :---- | :---------------------- | :------- | :---------------- |
+| input | List<StockLevelRequest> | ✅       | The request body. |
 
 **Return Type**
 
@@ -67,7 +67,7 @@ using VoyadoEngage.Models;
 var client = new VoyadoEngageClient();
 
 var inputItem = new StockLevelRequest();
-var input = new List`<StockLevelRequest>`() { inputItem };
+var input = new List<StockLevelRequest>() { inputItem };
 
 var response = await client.Inventory.InventoryUpdateStockLevelsAsync(input);
 

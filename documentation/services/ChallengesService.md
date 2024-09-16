@@ -144,9 +144,9 @@ Send in a list of checkpoints to be assigned to a some challenge for a number of
 
 **Parameters**
 
-| Name  | Type                           | Required | Description       |
-| :---- | :----------------------------- | :------- | :---------------- |
-| input | List`<ChallengeCheckPointDto>` | ✅       | The request body. |
+| Name  | Type                         | Required | Description       |
+| :---- | :--------------------------- | :------- | :---------------- |
+| input | List<ChallengeCheckPointDto> | ✅       | The request body. |
 
 **Return Type**
 

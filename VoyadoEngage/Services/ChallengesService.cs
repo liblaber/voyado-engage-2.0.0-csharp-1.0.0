@@ -2,6 +2,8 @@
 
 using System.Net.Http.Json;
 using VoyadoEngage.Http;
+using VoyadoEngage.Http.Exceptions;
+using VoyadoEngage.Http.Extensions;
 using VoyadoEngage.Http.Serialization;
 using VoyadoEngage.Models;
 
@@ -28,9 +30,9 @@ public class ChallengesService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<ChallengeAssignmentModel>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -54,9 +56,9 @@ public class ChallengesService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<ChallengeDefinitionModel>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -84,9 +86,9 @@ public class ChallengesService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<ChallengeDefinitionModelsResult>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -122,9 +124,9 @@ public class ChallengesService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<ChallengeAssignmentModelsResult>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -161,9 +163,9 @@ public class ChallengesService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<AddCheckpointToChallengeAssignmentResult>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -197,9 +199,9 @@ public class ChallengesService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+            .EnsureSuccessfulResponse()
             .Content.ReadFromJsonAsync<bool>(_jsonSerializerOptions, cancellationToken)
             .ConfigureAwait(false);
     }

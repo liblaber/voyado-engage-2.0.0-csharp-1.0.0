@@ -2,6 +2,8 @@
 
 using System.Net.Http.Json;
 using VoyadoEngage.Http;
+using VoyadoEngage.Http.Exceptions;
+using VoyadoEngage.Http.Extensions;
 using VoyadoEngage.Http.Serialization;
 using VoyadoEngage.Models;
 
@@ -26,9 +28,9 @@ public class AchievementsService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<List<ApiAchievementValue>>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -50,9 +52,9 @@ public class AchievementsService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<PagedResultOfApiAchievementDefinition>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -83,7 +85,8 @@ public class AchievementsService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
+
+        response.EnsureSuccessfulResponse();
     }
 
     public async Task AchievementsRemoveAchievementAsync(
@@ -106,6 +109,7 @@ public class AchievementsService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
+
+        response.EnsureSuccessfulResponse();
     }
 }

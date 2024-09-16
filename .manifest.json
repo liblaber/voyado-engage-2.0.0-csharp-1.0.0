@@ -1,8 +1,8 @@
 {
-  "liblabVersion": "2.1.23",
-  "date": "2024-07-25T13:49:43.911Z",
+  "liblabVersion": "2.3.2",
+  "date": "2024-09-16T20:07:12.439Z",
   "config": {
-    "apiId": 414,
+    "apiId": 1169,
     "sdkName": "voyado_engage",
     "sdkVersion": "1.0.0",
     "liblabVersion": "2",
@@ -10,7 +10,7 @@
     "languages": ["csharp"],
     "apiVersion": "1.0.0",
     "apiName": "voyado",
-    "specFilePath": "./voyao_engage_swagger.json",
+    "specFilePath": "./apis/voyado.json",
     "auth": ["bearer"],
     "languageOptions": {
       "csharp": {
@@ -40,7 +40,7 @@
         "prefix": "Bearer"
       }
     },
-    "devContainer": false,
+    "devContainer": true,
     "generateEnv": true,
     "includeOptionalSnippetParameters": true,
     "inferServiceNames": false,
@@ -62,7 +62,6 @@
       "httpMethodsToRetry": ["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS"]
     },
     "multiTenant": true,
-    "specUrl": "https://dev-liblab-api-stack-specs.s3.us-east-1.amazonaws.com/414/open-api-spec.json?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIA3C2RXH7MWUCMN7ON%2F20240725%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240725T134938Z&X-Amz-Expires=43200&X-Amz-Signature=94492284738682e64b236f7d036939fe88d998d80ac3837429aad88f6abaa9b6&X-Amz-SignedHeaders=host&x-id=GetObject",
     "includeWatermark": true,
     "packageId": "",
     "githubRepoName": "",
@@ -79,7 +78,7 @@
     "httpLibrary": {
       "name": "axios",
       "packages": {
-        "axios": "^1.6.8"
+        "axios": "^1.7.4"
       },
       "languages": ["typescript"]
     },
@@ -206,6 +205,9 @@
     "documentation/models/ReceiptUsedPromotion.md",
     "documentation/models/ReceiptExtraDataItem.md",
     "documentation/models/ReceiptItemDiscount.md",
+    ".devcontainer/devcontainer.json",
+    "VoyadoEngage/Http/ApiException.cs",
+    "VoyadoEngage/Http/HttpResponseMessageExtensions.ejs';}.cs",
     "VoyadoEngage/Services/TransactionsService.cs",
     "VoyadoEngage/Models/ApiAchievementValue.cs",
     "VoyadoEngage/Models/PagedResultOfApiAchievementDefinition.cs",

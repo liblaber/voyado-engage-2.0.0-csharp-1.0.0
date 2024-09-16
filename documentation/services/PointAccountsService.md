@@ -202,10 +202,10 @@ Console.WriteLine(response);
 
 **Parameters**
 
-| Name           | Type                              | Required | Description                  |
-| :------------- | :-------------------------------- | :------- | :--------------------------- |
-| input          | List`<PointTransactionToAccount>` | ✅       | The request body.            |
-| idempotencyKey | string                            | ❌       | Optional, lasts for 24 hours |
+| Name           | Type                            | Required | Description                  |
+| :------------- | :------------------------------ | :------- | :--------------------------- |
+| input          | List<PointTransactionToAccount> | ✅       | The request body.            |
+| idempotencyKey | string                          | ❌       | Optional, lasts for 24 hours |
 
 **Return Type**
 
@@ -220,7 +220,7 @@ using VoyadoEngage.Models;
 var client = new VoyadoEngageClient();
 
 var inputItem = new PointTransactionToAccount();
-var input = new List`<PointTransactionToAccount>`() { inputItem };
+var input = new List<PointTransactionToAccount>() { inputItem };
 
 var response = await client.PointAccounts.PointAccountAddPointTransactionsAsync(input, "Idempotency-Key");
 
