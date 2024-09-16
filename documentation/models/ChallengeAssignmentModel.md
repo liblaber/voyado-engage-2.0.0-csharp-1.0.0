@@ -17,7 +17,7 @@
 | LatestCheckpointAddedOn | string                         | ❌       |             |
 | RequiredCheckpoints     | long                           | ❌       |             |
 | Status                  | ChallengeAssignmentModelStatus | ❌       |             |
-| Links                   | List<IHypermediaLink>          | ❌       |             |
+| Links                   | List`<IHypermediaLink>`        | ❌       |             |
 
 # ChallengeAssignmentModelStatus
 

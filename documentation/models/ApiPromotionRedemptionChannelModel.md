@@ -7,7 +7,7 @@
 | Type\_      | ApiPromotionRedemptionChannelModelType      | ❌       |                                                                                                                                                                                          |
 | ValueType   | ApiPromotionRedemptionChannelModelValueType | ❌       |                                                                                                                                                                                          |
 | Value       | object                                      | ❌       | The type of "Value" depends on "ValueType". "MONEY" returns a Money object (Amount+Currency), "EXTERNALOFFER" and "MANUAL" returns a string ("Promotion"). "PERCENT" returns an integer. |
-| LocalValues | List<object>                                | ❌       |                                                                                                                                                                                          |
+| LocalValues | List`<object>`                              | ❌       |                                                                                                                                                                                          |
 | Instruction | string                                      | ❌       |                                                                                                                                                                                          |
 
 # ApiPromotionRedemptionChannelModelType

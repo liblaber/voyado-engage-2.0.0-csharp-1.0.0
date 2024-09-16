@@ -202,10 +202,10 @@ Console.WriteLine(response);
 
 **Parameters**
 
-| Name           | Type                            | Required | Description                  |
-| :------------- | :------------------------------ | :------- | :--------------------------- |
-| input          | List<PointTransactionToAccount> | ✅       | The request body.            |
-| idempotencyKey | string                          | ❌       | Optional, lasts for 24 hours |
+| Name           | Type                              | Required | Description                  |
+| :------------- | :-------------------------------- | :------- | :--------------------------- |
+| input          | List`<PointTransactionToAccount>` | ✅       | The request body.            |
+| idempotencyKey | string                            | ❌       | Optional, lasts for 24 hours |
 
 **Return Type**
 

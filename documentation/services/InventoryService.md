@@ -50,9 +50,9 @@ Batch update of stock levels for multiple SKU's. Request model: - Sku*: Unique S
 
 **Parameters**
 
-| Name  | Type                    | Required | Description       |
-| :---- | :---------------------- | :------- | :---------------- |
-| input | List<StockLevelRequest> | ✅       | The request body. |
+| Name  | Type                      | Required | Description       |
+| :---- | :------------------------ | :------- | :---------------- |
+| input | List`<StockLevelRequest>` | ✅       | The request body. |
 
 **Return Type**
 
