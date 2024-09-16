@@ -2,6 +2,8 @@
 
 using System.Net.Http.Json;
 using VoyadoEngage.Http;
+using VoyadoEngage.Http.Exceptions;
+using VoyadoEngage.Http.Extensions;
 using VoyadoEngage.Http.Serialization;
 
 namespace VoyadoEngage.Services;
@@ -46,9 +48,9 @@ public class ContactoverviewService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<object>(_jsonSerializerOptions, cancellationToken)
                 .ConfigureAwait(false) ?? throw new Exception("Failed to deserialize response.");
     }

@@ -2,8 +2,8 @@
 
 **Properties**
 
-| Name                 | Type                         | Required | Description |
-| :------------------- | :--------------------------- | :------- | :---------- |
+| Name                 | Type                           | Required | Description |
+| :------------------- | :----------------------------- | :------- | :---------- |
 | MissingContactIds    | List`<string>`                 | ❌       |             |
 | MissingDefinitionIds | List`<string>`                 | ❌       |             |
 | NotAccepted          | List`<ChallengeCheckPointDto>` | ❌       |             |

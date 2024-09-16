@@ -67,7 +67,7 @@ using VoyadoEngage.Models;
 var client = new VoyadoEngageClient();
 
 var inputItem = new StockLevelRequest();
-var input = new List`<StockLevelRequest>`() { inputItem };
+var input = new List<StockLevelRequest>() { inputItem };
 
 var response = await client.Inventory.InventoryUpdateStockLevelsAsync(input);
 
